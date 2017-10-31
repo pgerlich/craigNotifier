@@ -1,0 +1,1062 @@
+Downloading from url http://www.freepatentsonline.com/result.html?sort=relevance&srch=top&query_txt=computer&patents=on&p=0
+Retrieved Response (status: 200), Parsing with lxml
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/fpo_8.css" />
+<script type="text/javascript">
+var plstart = new Date();
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-174791-1']);
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="FPO IP Research &amp; Communities" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Complete Patent Searching Database and Patent Data Analytics Services." />
+<title>FPO IP Research &amp; Communities</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--[if IE 6]>
+    <link href="/css/ie6.min.css" rel="stylesheet">
+<![endif]-->
+
+
+<link rel="shortcut icon" href="/images/favicon_1.ico"/>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1586334167197709",
+        enable_page_level_ads: true
+    });
+</script></head>
+<body>
+
+<div>
+    <a name="top"></a>
+
+    <div class="container">
+        
+<div class="header">
+    <div class="row-fluid top">
+
+        <div class="pull-left figure">
+            <a href="/" onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Logo']);"></a>
+        </div>
+
+
+        <div class="pull-right" style="width: 750px;">
+                        <div class="loginForm">
+                <form class="form-inline form-mini pull-right" action="/login.html" method="post">
+                    <input type="hidden" name="src" value="header_login">
+                    <input id="UID-top" name="UID" type="text" class="input-large" placeholder="Email">
+                    <input id="PWD-top" name="PWD" type="password" class="input-small" placeholder="Password">
+                    <button type="submit" class="btn btn-mini btn-primary"
+                            onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Login']);">Login
+                    </button>
+                    <a class="btn btn-mini btn-info" href="/register.html"
+                            onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Create']);">Sign up
+                    </a>
+                </form>
+            </div>
+            
+
+            <div class="searchForm well">
+                <form id="quick_result" name="quick_result" class="form-inline" action="/result.html" method="get"
+                      data-social-search-url="http://research.freepatentsonline.com/search/site">
+
+                    <input type="hidden" name="sort" value="relevance">
+                    <input type="hidden" name="srch" value="top">
+
+
+                    <div class="searchBox pull-left">
+                        <input type="text" name="query_txt" placeholder="Enter your search here"
+                               class="search-query" id="topSearchBox">
+
+                        <div class="btn-group">
+                            <button name="submit" class="btn btn-primary" type="submit"
+                                    onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Search']);">Search
+                            </button>
+                            <button id="searchBox_dropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/search.html"
+                                       onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'SearchExpert']);document.cookie = 'searchTab=#expert';">
+                                    Expert Search</a>
+                                </li>
+                                <li><a href="/search.html"
+                                       onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'SearchQuick']);document.cookie = 'searchTab=#quick';">
+                                    Quick Search</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sideCollections pull-right">
+                        <ul id="header_search_top" class="borderBottom ul-mini ">
+                            <li>
+                                <label onclick="deselect_bottom_row();" class="checkbox">
+                                    <input type="checkbox" id="patents" name="patents"
+                                           value="on" checked="checked">Patents/Apps
+                                </label>
+                            </li>
+
+                            <li>
+                                <label onclick="deselect_bottom_row();" class="checkbox">
+                                    <input type="checkbox" id="npl_lit" name="npl" value="on">
+                                    Non-Patent Literature
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse center" id="primaryNavBar">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li><a href="/"></a></li>
+                    <li><a href="/search.html">SEARCH</a></li>
+                    <li>
+                        <a href="http://research.freepatentsonline.com"
+                           onclick="_gaq.push(['_trackEvent', 'Navbar', 'Click', 'Research']);">
+                            RESEARCH</a>
+                    </li>
+                    <li>
+                        <a href="http://research.freepatentsonline.com/mpep"
+                           onclick="_gaq.push(['_trackEvent', 'Navbar', 'Click', 'MPEP']);">
+                            MPEP 2.0</a>
+                    </li>
+                    <li>
+                        <a href="/tools-resources.html"
+                           onclick="_gaq.push(['_trackEvent', 'Navbar', 'Click', 'Resources']);">
+                            TOOLS &amp; RESOURCES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://research.freepatentsonline.com/acclaimip" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Click', 'AcclaimIP']);">
+                            ACCLAIM IP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://research.freepatentsonline.com/help"
+                           onclick="_gaq.push(['_trackEvent', 'Navbar', 'Click', 'Help']);">HELP</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<div class="clearfix"></div>        <div>
+
+            <div id="dhtmltooltip"></div>
+            
+<form id="results" name="results" method="post" class="form-horizontal" action="/result.html"><input type="hidden" name="p" id="p" value="0" /><input type="hidden" name="query_txt" id="query_txt" value="computer" /><input type="hidden" name="stemming" id="quickstemming" value="" /><input type="hidden" name="sort" id="quicksort" value="relevance" /><input type="hidden" name="patents" id="quickpatents" value="on" /><input type="hidden" name="uspat" id="quickuspat" value="" /><input type="hidden" name="usapp" id="quickusapp" value="" /><input type="hidden" name="pct" id="quickpct" value="" /><input type="hidden" name="jp" id="quickjp" value="" /><input type="hidden" name="eupat" id="quickeu" value="" /><input type="hidden" name="npl" id="quicknpl" value="" /><input type="hidden" name="depat" id="quickde" value="" /><input type="hidden" name="srch" id="quicksearch" value="top" /><input type="hidden" name="date_range" id="quickdaterange" value="" /><input type="hidden" name="hits" id="hits" value="10371850" /><input type="hidden" name="srch_name" id="srch_name" value="" /><input type="hidden" name="search_name" id="search_name" value="" /><input type="hidden" name="selected_doc_flag" id="selected_doc_flag" value="" /><input type="hidden" name="selected_portfolio" id="selected_portfolio" value="" /><input type="hidden" name="portfolio_name" id="portfolio_name" value="" />
+
+<div class="well well-small" style="margin-top:10px; margin-bottom: 0">
+    <table width="100%" border="0">
+        <tr>
+            <td width="36%">
+                Matches 1 - 50 out of 10371850            </td>
+            <td align="right" valign="middle" width="70%" colspan="3" class="paginate_spacing">
+                 <span margin-left:3px;'><b>1</b></span><a href='result.html?p=2&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 2 </a><a href='result.html?p=3&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 3 </a><a href='result.html?p=4&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 4 </a><a href='result.html?p=5&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 5 </a><a href='result.html?p=6&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 6 </a><a href='result.html?p=7&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 7 </a><a href='result.html?p=8&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 8 </a><a href='result.html?p=9&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 9 </a><a href='result.html?p=10&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 10 </a><a href='result.html?p=11&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 11 </a><a href='result.html?p=12&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 12 </a><a href='result.html?p=13&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 13 </a><a href='result.html?p=14&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 14 </a><a href='result.html?p=15&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 15 </a><a href='result.html?p=2&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> &gt; </a>                <br clear="all"/>
+            </td>
+        </tr>
+    </table>
+</div><br clear="all"/><!-- 728x90 Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1586334167197709"
+     data-ad-slot="2270521617"
+     data-ad-format="auto">
+</ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br clear="all"/>
+
+<div class="legacy-container" style="margin-top: 0">
+    <div class="container_white" style="padding-top:3px;  padding-bottom:10px;">
+        <div align="center">
+            <table width="100%" border="0" cellpadding="2" cellspacing="1" class="listing_table">
+                <tr>
+                                        <th style="text-align:left;" width="10%">
+                        Match
+                    </th>
+                                        <th style="text-align:left;" width="15%"> Document</th>
+                    <th style="text-align:left;">Document Title</th>
+                    <th style='text-align:left;' width='10%'>Score</div></th>                </tr>
+                <tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                1            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20020080569    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2002/0080569.html">Computer</a>
+        &nbsp;
+                            <br/>
+                The invention relates to a computer with a housing (1) that has outwardly protruding geometries (6), preventing any setting-up of the computer housing (1) in an undesirable position.    </td>
+        <td width='5%'>
+        1000    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                2            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20110063789    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2011/0063789.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer having a mounting structure can be easily mounted to a wall. A bracket of the computer can receive a computer enclosure of the computer and easily mount a display and the computer...    </td>
+        <td width='5%'>
+        979    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                3            </label>
+        </td>
+    <td width="15%"  valign="top">
+      8164888    </td>
+    <td  width="60%" valign="top">
+        <a href="/8164888.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer having a mounting structure can be easily mounted to a wall. A bracket of the computer can receive a computer enclosure of the computer and easily mount a display and the computer...    </td>
+        <td width='5%'>
+        978    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                4            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20140078656    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2014/0078656.html">Computer</a>
+        &nbsp;
+                            <br/>
+                The Computer is a system built to process data in a timely and orderly fashion.    </td>
+        <td width='5%'>
+        954    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                5            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JP2003296276A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JP2003296276A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To provide a client computer which can authenticate a client without installing a plurality of server computers for authentication even when a server computer for...    </td>
+        <td width='5%'>
+        951    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                6            </label>
+        </td>
+    <td width="15%"  valign="top">
+      3646523    </td>
+    <td  width="60%" valign="top">
+        <a href="/3646523.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer is disclosed wherein the machine language thereof is a particular formal system, i.e., the "calculus of lambda conversion." Such machine language is the language of the "well-formed"...    </td>
+        <td width='5%'>
+        950    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                7            </label>
+        </td>
+    <td width="15%"  valign="top">
+      EP0235764A2    </td>
+    <td  width="60%" valign="top">
+        <a href="/EP0235764A2.html">Computer.</a>
+        &nbsp;
+                            <br/>
+                Abstract not available for EP0235764 Abstract of corresponding document: US4829451 The invention relates to a computer, in particular for simulating biological processes. The essential feature of...    </td>
+        <td width='5%'>
+        937    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                8            </label>
+        </td>
+    <td width="15%"  valign="top">
+      EP1223499A3    </td>
+    <td  width="60%" valign="top">
+        <a href="/EP1223499A3.html">Computer</a>
+        &nbsp;
+                            <br/>
+                Abstract not available for EP1223499 Abstract of corresponding document: US2002080569 The invention relates to a computer with a housing (1) that has outwardly protruding geometries (6),...    </td>
+        <td width='5%'>
+        935    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                9            </label>
+        </td>
+    <td width="15%"  valign="top">
+      EP1223499A2    </td>
+    <td  width="60%" valign="top">
+        <a href="/EP1223499A2.html">Computer</a>
+        &nbsp;
+                            <br/>
+                Abstract not available for EP1223499 Abstract of corresponding document: US2002080569 The invention relates to a computer with a housing (1) that has outwardly protruding geometries (6),...    </td>
+        <td width='5%'>
+        934    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                10            </label>
+        </td>
+    <td width="15%"  valign="top">
+      8089761    </td>
+    <td  width="60%" valign="top">
+        <a href="/8089761.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer includes an enclosure, a heat sink and a fan. Two openings are defined at opposite sides of the enclosure. The heat sink is located in the enclosure. The fan is located at one opening...    </td>
+        <td width='5%'>
+        934    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                11            </label>
+        </td>
+    <td width="15%"  valign="top">
+      WO/1991/016681A1    </td>
+    <td  width="60%" valign="top">
+        <a href="/WO1991016681A1.html">COMPUTERS</a>
+        &nbsp;
+                            <br/>
+                A multiple processor computer system in which a group of computing units, each with a processor linked to a private memory via a private data bus, are linked each one to every other via a...    </td>
+        <td width='5%'>
+        929    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                12            </label>
+        </td>
+    <td width="15%"  valign="top">
+      EP1393150B1    </td>
+    <td  width="60%" valign="top">
+        <a href="/EP1393150B1.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                The invention relates to a computer with a housing (1), the front side of which is covered with a front screen (2). Said front screen (2) comprises recesses (8), located laterally in relation to...    </td>
+        <td width='5%'>
+        928    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                13            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20110122566    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2011/0122566.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer includes an enclosure, a heat sink and a fan. Two openings are defined at opposite sides of the enclosure. The heat sink is located in the enclosure. The fan is located at one opening...    </td>
+        <td width='5%'>
+        928    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                14            </label>
+        </td>
+    <td width="15%"  valign="top">
+      6700776    </td>
+    <td  width="60%" valign="top">
+        <a href="/6700776.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer with a fixed casing accommodating at least one computer component and having an upward opening, a movable casing covering at least a part of the opening of the fixed casing and equipped...    </td>
+        <td width='5%'>
+        927    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                15            </label>
+        </td>
+    <td width="15%"  valign="top">
+      7724512    </td>
+    <td  width="60%" valign="top">
+        <a href="/7724512.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer storing an operating system therein and including a first case, a second case, a driving mechanism and a starting unit is provided. The driving mechanism is connected between the first...    </td>
+        <td width='5%'>
+        927    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                16            </label>
+        </td>
+    <td width="15%"  valign="top">
+      7139167    </td>
+    <td  width="60%" valign="top">
+        <a href="/7139167.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer having a computer main body mounted with a plurality of hardware, the computer also having: a port part provided on a part of the main body and having at least one port; a cover...    </td>
+        <td width='5%'>
+        927    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                17            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20090147465    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2009/0147465.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer storing an operating system therein and including a first case, a second case, a driving mechanism and a starting unit is provided. The driving mechanism is connected between the first...    </td>
+        <td width='5%'>
+        925    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                18            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH0887428A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH0887428A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PURPOSE: To execute an application program on a host computer without downloading the program to the executing computer at each time by placing peripheral devices of the computer in operation at...    </td>
+        <td width='5%'>
+        923    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                19            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20040100766    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2004/0100766.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer comprising a casing having a display which is bordered by a frame, wherein arranged in the frame is a passage for a cooling fluid.    </td>
+        <td width='5%'>
+        922    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                20            </label>
+        </td>
+    <td width="15%"  valign="top">
+      3665411    </td>
+    <td  width="60%" valign="top">
+        <a href="/3665411.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                In normal digital computer operation each operation which is performed, normally requires a separate instruction. Time is required to obtain each instruction from storage and to decode each...    </td>
+        <td width='5%'>
+        922    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                21            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20160170458    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2016/0170458.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer is used in a computer. The computer includes a resistor coupled to a motherboard of the computer, a control module, and an output module. The output module is coupled between the...    </td>
+        <td width='5%'>
+        920    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                22            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20010056509    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2001/0056509.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer comprises a medium drive configured to reproduce data recorded in a video recording medium and an audio recording medium. When a reproduction switch is turned on if the computer is not...    </td>
+        <td width='5%'>
+        919    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                23            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20120191853    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2012/0191853.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer includes an enclosure, a network card connected to an external network, a time limit control device, a power module, and a switch. The time limit control device is used to set a...    </td>
+        <td width='5%'>
+        919    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                24            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH06161963A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH06161963A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PURPOSE: To provide a computer which can easily know the values of other computing items when the computing result is changed into an optional value. CONSTITUTION: A computing means 111 calculates...    </td>
+        <td width='5%'>
+        919    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                25            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20110151683    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2011/0151683.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer includes an expansion card, a mother board and a connector. The mother board includes an expansion slot thereon. The expansion slot corresponds to the expansion card. The connector...    </td>
+        <td width='5%'>
+        919    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                26            </label>
+        </td>
+    <td width="15%"  valign="top">
+      WO/2016/194221A1    </td>
+    <td  width="60%" valign="top">
+        <a href="/WO2016194221A1.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                Provided is a computer, which comprises a general computation unit, a local field response computation unit, a storage unit, and a control unit, and which, by a control of the control unit,...    </td>
+        <td width='5%'>
+        918    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                27            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JP2004171590A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JP2004171590A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To provide a plane computer capable of processing large-scale computation at high speeds.SOLUTION: The plane computer uses ASIC-DRAM 1, connects an arithmetic block and a...    </td>
+        <td width='5%'>
+        918    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                28            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20050030709    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2005/0030709.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer having a computer main body mounted with a plurality of hardware, the computer also having: a port part provided on a part of the main body and having at least one port; a cover...    </td>
+        <td width='5%'>
+        916    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                29            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH05173681A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH05173681A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PURPOSE: To reduce the thickness of the lid opening/closing type computer such as a portable personal computer. CONSTITUTION: A projection 10 is provided on the side of a lid 4 and when the lid 4...    </td>
+        <td width='5%'>
+        915    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                30            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH11238044A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH11238044A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To provide a computer improving the usability of a loosely coupled computer system. SOLUTION: A computer 7 is incorporated into a loosely coupled computer system with the...    </td>
+        <td width='5%'>
+        914    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                31            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20020172003    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2002/0172003.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer with a fixed casing accommodating at least one computer component and having an upward opening, a movable casing covering at least a part of the opening of the fixed casing and equipped...    </td>
+        <td width='5%'>
+        914    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                32            </label>
+        </td>
+    <td width="15%"  valign="top">
+      6549414    </td>
+    <td  width="60%" valign="top">
+        <a href="/6549414.html">Computers</a>
+        &nbsp;
+                            <br/>
+                A low cost computer is suitable for small size configuration. Casings 4 and 32 are formed by aluminum, which is a heat radiating material, and CPUs 6 and 36, hard disk devices 8 and 38, control...    </td>
+        <td width='5%'>
+        913    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                33            </label>
+        </td>
+    <td width="15%"  valign="top">
+      WO/2009/015914A2    </td>
+    <td  width="60%" valign="top">
+        <a href="/WO2009015914A2.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                The invention relates to a computer having a housing and a motherboard arranged in the housing, wherein the motherboard is connected to the housing by an adhesive.    </td>
+        <td width='5%'>
+        913    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                34            </label>
+        </td>
+    <td width="15%"  valign="top">
+      8113850    </td>
+    <td  width="60%" valign="top">
+        <a href="/8113850.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer includes an expansion card, a mother board and a connector. The mother board includes an expansion slot thereon. The expansion slot corresponds to the expansion card. The connector...    </td>
+        <td width='5%'>
+        912    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                35            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JP2010049614A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JP2010049614A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To provide a computer applicable to an SIMD (Single Instruction Multiple Data) type computer and a vector type computer, which eliminates a need of detecting a specific...    </td>
+        <td width='5%'>
+        911    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                36            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JP2014106785A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JP2014106785A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To provide a technique for actualizing a mechanism for keeping contents of a database consistent at low cost in a database system applied with a multi-master system in which...    </td>
+        <td width='5%'>
+        911    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                37            </label>
+        </td>
+    <td width="15%"  valign="top">
+      WO/2002/029591A1    </td>
+    <td  width="60%" valign="top">
+        <a href="/WO2002029591A1.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer, including: two mainboards, each comprising at least one CPU, RAM, video controller and hard disk; a connection device for peripheral devices selectively interconnecting connected...    </td>
+        <td width='5%'>
+        910    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                38            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20040022020    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2004/0022020.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer, including: two mainboards, each comprising at least one CPU, RAM, video controller and hard disk; a connection device for peripheral devices selectively interconnecting connected...    </td>
+        <td width='5%'>
+        910    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                39            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPWO2012032572A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPWO2012032572A.html">Computer</a>
+        &nbsp;
+                            <br/>
+                Synchronous processing by a low overhead is performed without using exclusive hardware, when a plurality of tasks carry out parallel operation and have influence mutually. A computer is connected...    </td>
+        <td width='5%'>
+        908    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                40            </label>
+        </td>
+    <td width="15%"  valign="top">
+      7969738    </td>
+    <td  width="60%" valign="top">
+        <a href="/7969738.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer includes a casing in which an opening is formed, a heat generating element which is provided inside of the casing, a main cooling unit which is disposed between the opening of the...    </td>
+        <td width='5%'>
+        908    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                41            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20100161871    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2010/0161871.html">Computer</a>
+        &nbsp;
+                            <br/>
+                An all-in-one computer has a switch button is exposed on the front of the housing for a KVM switch, that is a switch for switching manual input data and VDU data. The KVM switch has a keyboard...    </td>
+        <td width='5%'>
+        905    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                42            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPWO2011024325A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPWO2011024325A.html">Computer</a>
+        &nbsp;
+                            <br/>
+                It is a computer which memorizes a stroke which was connected to a coordinates acquisition device which acquires a stroke filled in by worker, and was acquired by the coordinates acquisition...    </td>
+        <td width='5%'>
+        905    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                43            </label>
+        </td>
+    <td width="15%"  valign="top">
+      8085536    </td>
+    <td  width="60%" valign="top">
+        <a href="/8085536.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer includes an enclosure, a platform, a motherboard and at least one disk drive. A receiving space is defined by the enclosure. The platform divides the receiving space into at least two...    </td>
+        <td width='5%'>
+        905    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                44            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20110122564    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2011/0122564.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer includes an enclosure, a platform, a motherboard and at least one disk drive. A receiving space is defined by the enclosure. The platform divides the receiving space into at least two...    </td>
+        <td width='5%'>
+        905    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                45            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JP2004102657A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JP2004102657A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To solve the problem that it is difficult, particularly for a pupil in the lower grade of an elementary school, to see a teacher' face and a blackboard when a stationary...    </td>
+        <td width='5%'>
+        903    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                46            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20050040740    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2005/0040740.html">Computer</a>
+        &nbsp;
+                            <br/>
+                The present invention relates to a computer comprising a main frame and a front cover provided at the front of the main frame. A hook protrudes from the front cover toward the main frame. A...    </td>
+        <td width='5%'>
+        903    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                47            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20020141146    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2002/0141146.html">Computer</a>
+        &nbsp;
+                            <br/>
+                A computer having a base having a keyboard and a display arrangement including first and second displays with respective screens, the displays being pivotally connected to the base. The pivotal...    </td>
+        <td width='5%'>
+        901    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                48            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH11184556A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH11184556A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To set an exact time without being affected by a transmission delay. SOLUTION: In a computer having a function for correcting the time of the own computer as a reference time...    </td>
+        <td width='5%'>
+        901    </td>
+    </tr><tr class=rowalt>
+        <td width="5%" valign="top" >
+            <label>
+                49            </label>
+        </td>
+    <td width="15%"  valign="top">
+      JPH11110533A    </td>
+    <td  width="60%" valign="top">
+        <a href="/JPH11110533A.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                PROBLEM TO BE SOLVED: To connect an image reader to the main body of computer, without the use of external cable by providing a bay for peripheral equipment incorporation at one part of the main...    </td>
+        <td width='5%'>
+        901    </td>
+    </tr><tr class=>
+        <td width="5%" valign="top" >
+            <label>
+                50            </label>
+        </td>
+    <td width="15%"  valign="top">
+      US20100033917    </td>
+    <td  width="60%" valign="top">
+        <a href="/y2010/0033917.html">COMPUTER</a>
+        &nbsp;
+                            <br/>
+                A computer including a chassis, a mainboard, a plurality of computing units, a plurality of I/O interface ports, a plurality of first storage apparatuses, a rack, at least one expansion storage...    </td>
+        <td width='5%'>
+        899    </td>
+    </tr>            </table>
+        </div>
+    </div>
+</div>
+</form>
+<!-- 728x90 Responsive 2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1586334167197709"
+     data-ad-slot="4118051210"
+     data-ad-format="auto">
+</ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br clear="all"/><form id="botSearch" name="botSearch" method="get" class="form-inline" action="/result.html"><input type="hidden" name="sort" id="" value="relevance" /><input type="hidden" name="srch" id="" value="top" /><input type="hidden" name="patents" id="" value="on" /><br/>
+<div class="well well-small">
+    <table>
+        <tr>
+            <td>Search</td>
+            <td style="width: 100%;padding: 0 14px 0 5px;"><input type="text" name="query_txt" id="query_txt" value="computer" style="width: 100%;padding: 4px 0 4px 6px" /></td>
+            <td><input type="submit" name="search" value="Search" /></td>
+        </tr>
+    </table>
+</div>
+</form>
+<div class="well well-small" style="margin-top:10px; margin-bottom: 0">
+    <table width="100%" border="0">
+        <tr>
+            <td width="36%">
+                Matches 1 - 50 out of 10371850            </td>
+            <td align="right" valign="middle" width="70%" colspan="3" class="paginate_spacing">
+                 <span margin-left:3px;'><b>1</b></span><a href='result.html?p=2&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 2 </a><a href='result.html?p=3&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 3 </a><a href='result.html?p=4&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 4 </a><a href='result.html?p=5&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 5 </a><a href='result.html?p=6&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 6 </a><a href='result.html?p=7&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 7 </a><a href='result.html?p=8&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 8 </a><a href='result.html?p=9&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 9 </a><a href='result.html?p=10&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 10 </a><a href='result.html?p=11&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 11 </a><a href='result.html?p=12&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 12 </a><a href='result.html?p=13&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 13 </a><a href='result.html?p=14&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 14 </a><a href='result.html?p=15&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> 15 </a><a href='result.html?p=2&amp;sort=relevance&amp;srch=top&amp;query_txt=computer&amp;patents=on'> &gt; </a>                <br clear="all"/>
+            </td>
+        </tr>
+    </table>
+</div> « <a href="/search.html">search again</a>
+        </div>
+
+        <div class="pageFooter">
+    <div class="row-fluid top">
+        <div class="figure"></div>
+        <ul>
+            <li>
+                <a href="/" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Home']);">Home</a>
+            </li>
+            <li>
+                <a href="/search.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Search']);">Search</a>
+            </li>
+            <li>
+                <a href="/services.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Services']);">Services</a>
+            </li>
+            <li>
+                <a href="http://research.freepatentsonline.com"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Data']);">Communities</a>
+            </li>
+            <li>
+                <a href="http://research.freepatentsonline.com/help"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Help']);">Help</a>
+            </li>
+            <li>
+                <a href="/contact.html"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Contact']);">Contact us</a></li>
+            <li>
+                <a href="http://research.freepatentsonline.com/help#advertising-on-site"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Advertise']);">Advertise on this Site</a>
+            </li>
+        </ul>
+        <ul class="socialIcons">
+            <li><a href="https://twitter.com/FPOCommunity" class="twitter"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'social twitter']);"></a></li>
+            <li><a href="http://www.linkedin.com/groups/FPO-Community-4524797" class="linkedin"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'social linkedin']);"></a></li>
+            <li><a href="/contact.html" class="email"
+                   onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'social email']);"></a></li>
+        </ul>
+    </div>
+    <div class="row-fluid bot">
+        <p>
+            &copy; 2004-2017 FreePatentsOnline.com. All rights reserved.
+            <a href="/privacy.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Privacy']);">Privacy Policy
+                &amp; Terms of Use.</a>
+            <a href="http://www.sumobrainsolutions.com/">A SumoBrain Solutions Company</a>
+        </p>
+    </div>
+</div>    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    _gaq.push(['_setCustomVar', 2, 'User Origin Source', 'no referer', 2]);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script type="text/javascript">
+    function trackPageLoad() {
+        var plend = new Date();
+        var plload = plend.getTime() - plstart.getTime();
+        var pn = document.location.pathname;
+        var lc = 'slow';
+        var la = new Array(200, 300, 400, 500, 1000, 1500, 2000, 2500, 5000);
+        for (var i = 0, len = la.length; i < len; i++) {
+            if (plload <= la[i]) {
+                lc = String(la[i]);
+                break;
+            }
+        }
+        _gaq.push(['onLoadTracker._setAccount', 'UA-174791-5']);
+        _gaq.push(['onLoadTracker._trackEvent', "LoadTime", lc, pn, plload]);
+        }
+</script>
+<script type="text/javascript">
+    try {
+        if (window.onload != null) {
+            var oldOnload = window.onload;
+            window.onload = function (e) {
+                oldOnload(e);
+                trackPageLoad();
+            };
+        }
+        else {
+            window.onload = trackPageLoad();
+        }
+    } catch (err) {
+    }
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/fpo_2.js"></script>
+<script type="text/javascript">
+var topSearchBox = document.getElementById('topSearchBox');topSearchBox.value = 'computer';
+</script>
+
+<!--[if IE 6]>
+    <script type="text/javascript" src="/js/ie6_compat.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    (function () {
+        var hasPlaceholder = 'placeholder' in document.createElement('input');
+        if (!hasPlaceholder) {
+            $.cachedScript("/js/jquery.placeholder.min.js").success(function (script, textStatus) {
+                $('input, textarea').placeholder();
+            });
+        }
+    })();
+</script>
+</body>
+</html>
+
