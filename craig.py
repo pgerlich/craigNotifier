@@ -13,9 +13,9 @@ from bs4 import BeautifulSoup
 class Cache:
     """ Cache used to store craigslist results keyed by their URL
     """
-    def __init__(self, service):
+    def __init__(self, service, max=250):
         self.count = 0
-        self.max = 250
+        self.max = max
         self.service = service
         self.cache_set = set()
         self.seen = []
@@ -178,7 +178,7 @@ class CraigslistWatcher:
                 results_table = beautiful_soup.find_all('ul', class_='rows')
 
                 if not results_table:
-                    log_file.write('FAILED TO FIND THE TABLE')
+                    log_file.write('FAILED TO FIND THE TABLE FOR {}'.format(service))
 
                     # Cheat and leverage sendmail to notify recipient of failure to parse. Could mean we got a captcha
                     self.send_mail(service, {'N/A': {'url': 'Failed to find table for service', 'img': ''}}, log_file)
