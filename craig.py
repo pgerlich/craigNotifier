@@ -136,8 +136,6 @@ class CraigslistWatcher:
             # Send notification to recepient
             server.sendmail(os.environ['SENDER'], os.environ['RECIPIENT'], message.as_string())
 
-            return
-
         log_file.write('{}: sent {} notifications \n'.format(service, len(entries.keys())))
 
         server.close()
