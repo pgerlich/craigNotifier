@@ -1,3 +1,4 @@
+import json
 import os
 import smtplib
 import time
@@ -13,12 +14,21 @@ from bs4 import BeautifulSoup
 class Cache:
     """ Cache used to store craigslist results keyed by their URL
     """
-    def __init__(self, service, max=250):
-        self.count = 0
-        self.max = max
-        self.service = service
-        self.cache_set = set()
-        self.seen = []
+    def __init__(self, service, max=250, json=None):
+        self.count = json['count'] if json else 0
+        self.max = json['max'] if json else max
+        self.service = json['service'] if json else service
+        self.cache_set = set(json['cache_set'] if json else [])
+        self.seen = json['seen'] if json else []
+
+    def to_json(self):
+        return {
+            'count': self.count,
+            'max': self.max,
+            'service': self.service,
+            'cache_set': list(self.cache_set),
+            'seen': self.seen
+        }
 
     def add_entry(self, title, url, log_file):
         """ Adds an entry to the cache
@@ -78,11 +88,17 @@ class CraigslistWatcher:
         saved_cache = None
         if os.path.exists('cache.txt'):
             cache_file = open('cache.txt', 'r')
+            cache = cache_file.read()
+            saved_cache = json.loads(cache) if cache else None
             cache_file.close()
 
+        caches = None
+        if saved_cache:
+            caches = {service: Cache(None, None, cache_json) for service, cache_json in saved_cache.iteritems()}
+
         # Create cache for each service provided
-        self.caches = {service: Cache(service)
-                  for service in self.services}
+        self.caches = caches or {service: Cache(service)
+                                 for service in self.services}
 
 
     def parse_results(self, table, cache, log_file):
@@ -138,12 +154,16 @@ class CraigslistWatcher:
 
             message = MIMEText(msg)
             message['Subject'] = 'Craiglists Notification'
-            message['To'] = os.environ['RECIPIENT']
+            message['To'] = os.environ['EMAIL_RECIPIENT']
             message['Date'] = formatdate()
             message['From'] = os.environ['SENDER']
 
-            # Send notification to recepient
-            server.sendmail(os.environ['SENDER'], os.environ['RECIPIENT'], message.as_string())
+            # Send notification to recepient (email and text)
+            if os.environ.get('EMAIL_RECIPIENT'):
+                server.sendmail(os.environ['SENDER'], os.environ['EMAIL_RECIPIENT'], message.as_string())
+
+            if os.environ.get('TEXT_RECIPIENT'):
+                server.sendmail(os.environ['SENDER'], os.environ['TEXT_RECIPIENT'], message.as_string())           
 
             email_count += 1
 	    if email_count == 25:
@@ -154,6 +174,13 @@ class CraigslistWatcher:
 
         server.close()
 
+    def persist_caches(self):
+        serializable_cache = {cache.service: cache.to_json() for cache in self.caches.values()}
+
+        if serializable_cache:
+            cache_file = open('cache.txt', 'w')
+            cache_file.write(json.dumps(serializable_cache))
+            cache_file.close()
 
     @staticmethod
     def get_log_file():
@@ -205,10 +232,18 @@ class CraigslistWatcher:
                 if interesting_results:
                     self.send_mail(service, interesting_results, log_file)
 
+                self.caches[service] = cache
 
             sleep_time = randint(int(os.environ['SLEEP_MIN']), int(os.environ['SLEEP_MAX']))
+
+            # Close Log file
             log_file.write('Sleeping for {} seconds'.format(sleep_time) + '\n')
             log_file.close()
+
+            # Persist Caches
+            self.persist_caches()
+
+            # Sleep
             time.sleep(sleep_time)
 
 
