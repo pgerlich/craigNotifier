@@ -1,2 +1,0 @@
-Downloading from url https://www.lens.org/lens/search?q=computer&p=2
-Retrieved Response (status: 200), Parsing with lxml

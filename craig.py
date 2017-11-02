@@ -52,7 +52,7 @@ class Cache:
 
         self.count += 1
 
-        log_file.write('{}: Added {} to cache. Size is now:'.format(self.service, title, self.count) + '\n')
+        log_file.write('{}: Added {} to cache. Size is now: {}'.format(self.service, title.encode('utf8'), self.count) + '\n')
 
         return True
 
@@ -71,8 +71,14 @@ class CraigslistWatcher:
         self.keywords = keywords or [
             'tv', 'television', 'computer', 'electronic', 'calculator',
             'vintage', 'electric', 'chinchilla', 'router', 'modem', 'printer',
-            'scanner', 'copier', 'sound', 'free', 'plant'
+            'scanner', 'copier', 'sound', 'plant', 'bike', 'bicycle', 
+            'ski', 'boots', 'snowboard', 'phone'
         ]
+
+        saved_cache = None
+        if os.path.exists('cache.txt'):
+            cache_file = open('cache.txt', 'r')
+            cache_file.close()
 
         # Create cache for each service provided
         self.caches = {service: Cache(service)
@@ -121,20 +127,28 @@ class CraigslistWatcher:
             entries: Dictionary of the form{titleForAdd : {url: urlForAdd, img: imageForAdd}}
             log_file: File for writing logs to
         """
-        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server = smtplib.SMTP(os.environ['SMTP_SERVER'], os.environ['SMTP_PORT'])
         server.ehlo()
         server.starttls()
-        server.login(os.environ['SENDER'], os.environ['GMAIL_PASSWORD'])
+        server.login(os.environ['SMTP_USER'], os.environ['SMTP_PASSWORD'])
 
+        email_count = 0
         for key, info in entries.iteritems():
-            msg = '{}:\n{} : {}\n {}'.format(service, key, info['url'], info['img'])
+            msg = '{}:\n{} : {}\n {}'.format(service, key.encode('utf8'), info['url'], info['img'])
 
             message = MIMEText(msg)
+            message['Subject'] = 'Craiglists Notification'
+            message['To'] = os.environ['RECIPIENT']
             message['Date'] = formatdate()
             message['From'] = os.environ['SENDER']
 
             # Send notification to recepient
             server.sendmail(os.environ['SENDER'], os.environ['RECIPIENT'], message.as_string())
+
+            email_count += 1
+	    if email_count == 25:
+                email_count = 0
+                time.sleep(60)
 
         log_file.write('{}: sent {} notifications \n'.format(service, len(entries.keys())))
 
